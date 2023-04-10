@@ -32,4 +32,21 @@ public class StringUtilTest {
     }
 
 
+    //Metodo isEmpty
+
+    @Test
+    public void no_empty_string() {
+        Assert.assertFalse(StringUtil.isEmpty(" hola"));
+    }
+
+    @Test
+    public void empty_string() {
+        Assert.assertTrue(StringUtil.isEmpty(" "));
+    }
+
+    @Test
+    public void empty_string_null() {
+        Assert.assertTrue(StringUtil.isEmpty(null));
+    }
+
 }
